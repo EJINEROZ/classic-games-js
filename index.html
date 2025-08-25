@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Classic Games — JavaScript</title>
+<link rel="stylesheet" href="./styles.css"/>
+</head><body>
+<header class="site"><h1>Classic Games — JavaScript</h1>
+<p>Ten timeless games, rebuilt in the browser.</p></header>
+<main class="grid">
+  <a class="card" href="./games/snake/"><h2>Snake</h2><p>Grid movement, collisions, speed-up.</p></a>
+  <a class="card" href="./games/pong/"><h2>Pong</h2><p>1P vs AI / 2P, spin angles.</p></a>
+  <a class="card" href="./games/tetris/"><h2>Tetris</h2><p>Matrix, rotations, line clears.</p></a>
+  <a class="card" href="./games/space-invaders/"><h2>Space Invaders</h2><p>Alien waves, projectiles.</p></a>
+  <a class="card" href="./games/pacman/"><h2>Pac-Man</h2><p>Maze, pellets, ghost AI.</p></a>
+  <a class="card" href="./games/breakout/"><h2>Breakout</h2><p>Ball physics, bricks.</p></a>
+  <a class="card" href="./games/minesweeper/"><h2>Minesweeper</h2><p>Mines, recursion, flags.</p></a>
+  <a class="card" href="./games/flappy-bird/"><h2>Flappy Bird</h2><p>Gravity, pipes.</p></a>
+  <a class="card" href="./games/chess/"><h2>Chess</h2><p>Moves, DnD, optional AI.</p></a>
+  <a class="card" href="./games/2048/"><h2>2048</h2><p>Tile merges, scoring.</p></a>
+</main>
+<footer class="site"><p>© <span id="y"></span></p></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body></html>
