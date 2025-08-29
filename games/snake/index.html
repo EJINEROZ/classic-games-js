@@ -9,7 +9,9 @@
       --bg:#0b0f17; --panel:#121826; --grid:#1c2436; --snake:#6ee7b7; --head:#34d399; --food:#f472b6; --text:#e5e7eb; --accent:#60a5fa;
     }
     *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:radial-gradient(1200px 800px at 50% -10%,#111827 0%, var(--bg) 60%);color:var(--text);font:16px/1.4 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    html,body{height:100%;margin:0;background:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("./snake.jpg") center/cover no-repeat fixed;color:var(--text);font:16px/1.4 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
     .wrap{min-height:100%;display:grid;place-items:center;padding:24px}
     .card{width:min(720px, 92vw);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
     header{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid rgba(255,255,255,.08)}
@@ -34,7 +36,7 @@
   <div class="wrap">
     <div class="card">
       <header>
-        <h1>Snake — JavaScript (Canvas)</h1>
+        <h1>2.Snake — JavaScript</h1>
         <div class="hud">
           <span class="badge">Score: <strong id="score">0</strong></span>
           <span class="badge">High: <strong id="high">0</strong></span>

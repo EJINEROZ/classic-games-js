@@ -12,7 +12,9 @@
       --player:#22d3ee; --invader:#fef3c7; --bullet:#fb7185; --shield:#34d399;
     }
     *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:radial-gradient(1200px 800px at 50% -10%, #17102f 0%, var(--bg) 60%);color:var(--text);font:16px/1.45 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    html,body{height:100%;margin:0;background:
+    linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+    url("./spain.jpg") center/cover no-repeat fixed;color:var(--text);font:16px/1.45 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
     .wrap{min-height:100%;display:grid;place-items:center;padding:18px}
     .card{
       width:min(1100px,96vw);
@@ -45,7 +47,7 @@
   <div class="wrap">
     <div class="card">
       <header>
-        <h1>Space Invaders — JavaScript (Canvas)</h1>
+        <h1>4.Space Invaders — JavaScript</h1>
         <div class="hud">
           <span class="badge">Score <strong id="score">0</strong></span>
           <span class="badge">High <strong id="high">0</strong></span>

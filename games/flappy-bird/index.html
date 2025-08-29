@@ -7,7 +7,9 @@
 <style>
 :root{ --bg:#0a0f1a; --panel:#0e1424; --grid:#14203a; --text:#e6f2ff; --muted:#93a4c7; --bird:#facc15; --pipe:#22c55e; --pipe2:#16a34a; }
 *{box-sizing:border-box}
-html,body{height:100%;margin:0;background:radial-gradient(1200px 800px at 50% -15%, #152443 0%, var(--bg) 60%);color:var(--text);font:16px/1.45 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+html,body{height:100%;margin:0;background:
+    linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.78)),
+    url("./flappy.jpg") center/cover no-repeat fixed;color:var(--text);font:16px/1.45 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
 .wrap{min-height:100%;display:grid;place-items:center;padding:18px}
 .card{width:min(1100px,96vw);background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.1);border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.45)}
 header{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid rgba(255,255,255,.1)}
@@ -26,7 +28,7 @@ aside .panel{padding:12px 14px;background:rgba(255,255,255,.06);border:1px solid
 <div class="wrap">
 <div class="card">
 <header>
-<h1>Flappy Bird — JavaScript (Canvas)</h1>
+<h1>Bonus 2. — Flappy Bird — JavaScript</h1>
 <div class="hud">
 <span class="badge">Score <strong id="score">0</strong></span>
 <span class="badge">High <strong id="high">0</strong></span>

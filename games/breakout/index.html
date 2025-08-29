@@ -12,7 +12,9 @@
       --b1:#60a5fa; --b2:#34d399; --b3:#fbbf24; --b4:#f472b6; --b5:#a78bfa; --b6:#22d3ee;
     }
     *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:radial-gradient(1200px 800px at 50% -10%, #e9ecf7 0%, var(--bg) 60%);color:var(--text);font:16px/1.45 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    html,body{height:100%;margin:0;background:
+    linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.55)),
+    url("./break.png") center/cover no-repeat fixed;color:var(--text);font:16px/1.45 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
     .wrap{min-height:100%;display:grid;place-items:center;padding:18px}
     .card{
       width:min(1100px,96vw);
@@ -45,7 +47,7 @@
   <div class="wrap">
     <div class="card">
       <header>
-        <h1>Breakout — JavaScript (Canvas)</h1>
+        <h1>6.Breakout — JavaScript</h1>
         <div class="hud">
           <span class="badge">Score <strong id="score">0</strong></span>
           <span class="badge">High <strong id="high">0</strong></span>

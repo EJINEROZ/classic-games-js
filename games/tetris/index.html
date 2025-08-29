@@ -6,13 +6,20 @@
   <title>Tetris — Neon Variant</title>
   <style>
     :root{
-      /* Neon theme */
-      --bg:#0a0b12; --panel:#0e1324; --grid:#1a2246; --text:#eaf2ff; --muted:#9aa4b2; --accent:#00e7ff;
+      /* light theme to match the artwork */
+  --panel:#ffffff;            /* canvas card */
+  --frame:#d1d5db;            /* borders */
+  --grid:#e5e7eb;             /* board grid lines */
+  --text:#0f172a;             /* headings/text */
+  --muted:#475569;
+  --accent:#2563eb;           /* buttons/links */
       /* piece colors (punchier) */
       --c-i:#06b6d4; --c-j:#2563eb; --c-l:#fb923c; --c-o:#facc15; --c-s:#10b981; --c-t:#e879f9; --c-z:#f43f5e;
     }
     *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:radial-gradient(1200px 800px at 50% -10%,#0e1030 0%, var(--bg) 60%);color:var(--text);font:16px/1.45 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    html,body{height:100%;margin:0;background:
+    linear-gradient(rgba(255,255,255,.50), rgba(255,255,255,.50)),
+    url("./tress.jpg") center/cover no-repeat fixed;color:var(--text);font:16px/1.45 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
     .wrap{min-height:100%;display:grid;place-items:center;padding:12px}
     .card{
       width:min(1040px, 96vw);
@@ -61,7 +68,7 @@
   <div class="wrap">
     <div class="card">
       <header>
-        <h1>Tetris — Neon</h1>
+        <h1>3.Tetris — JavaScript</h1>
         <div class="hud">
           <span class="badge">Score <strong id="score">0</strong></span>
           <span class="badge">Lines <strong id="lines">0</strong></span>
